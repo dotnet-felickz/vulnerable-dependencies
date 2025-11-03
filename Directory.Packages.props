@@ -20,7 +20,7 @@
     <PackageVersion Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.0" /> <!-- Older version -->
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.2.3" /> <!-- Outdated version -->
-    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.3.0" /> <!-- Pinned to 6.3.0 -->
+    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.3.0" /> <!-- Explicitly pinned to 6.3.0, overriding the 6.2.3 transitive dependency -->
     
     <!-- Library dependencies with transitive vulnerabilities -->
     <PackageVersion Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" /> <!-- Has vulnerable dependencies -->
