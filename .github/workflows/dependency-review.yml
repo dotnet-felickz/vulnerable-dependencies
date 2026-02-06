@@ -32,6 +32,7 @@ jobs:
       - name: 'Dependency Review'
         #uses: actions/dependency-review-action@v4
         # Test 2 - attempt to fix bug with N/A shown
+        # Test 3 - build the dist folder - better debug output
         uses: forks-felickz/dependency-review-action@copilot/add-patched-versions-column
         # Commonly enabled options, see https://github.com/actions/dependency-review-action#configuration-options for all available options.
         with:
