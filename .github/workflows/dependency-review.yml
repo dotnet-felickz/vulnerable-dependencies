@@ -34,8 +34,9 @@ jobs:
         # Test 2 - attempt to fix bug with N/A shown
         # Test 3 - build the dist folder - better debug output
         # Test 3.1 - No snapshots were found for the head SHA 30134881ae6e9e0c6f8c01581b8cf6bbbb957b3f.
+        # Test 4 - merge in recent changes
         #uses: forks-felickz/dependency-review-action@copilot/add-patched-versions-column
-        uses: actions/dependency-review-action@539c79be65db3311f1eac7aa4a8d31840f738971 #aka forks-felickz:main   
+        uses: actions/dependency-review-action@e4047984002250b82268ac37f613ab74366e1d85 #aka forks-felickz:main   
 
         
         # Commonly enabled options, see https://github.com/actions/dependency-review-action#configuration-options for all available options.
