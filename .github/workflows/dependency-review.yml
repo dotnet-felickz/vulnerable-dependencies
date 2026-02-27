@@ -36,9 +36,7 @@ jobs:
         # Test 3.1 - No snapshots were found for the head SHA 30134881ae6e9e0c6f8c01581b8cf6bbbb957b3f.
         # Test 4 - merge in recent changes
         #uses: forks-felickz/dependency-review-action@copilot/add-patched-versions-column
-        uses: actions/dependency-review-action@e4047984002250b82268ac37f613ab74366e1d85 #aka forks-felickz:main   
-
-        
+        uses: actions/dependency-review-action@aa60746a920d63ce55376f67d381e15edd3a714d #aka forks-felickz:main     
         # Commonly enabled options, see https://github.com/actions/dependency-review-action#configuration-options for all available options.
         with:
           comment-summary-in-pr: always          
@@ -46,4 +44,6 @@ jobs:
           #   deny-licenses: GPL-1.0-or-later, LGPL-2.0-or-later
           retry-on-snapshot-warnings: true #wait for snapshots to upload from the auto-submission workflow!
           retry-on-snapshot-warnings-timeout: 120
+          show-patched-versions: true
+          
 
