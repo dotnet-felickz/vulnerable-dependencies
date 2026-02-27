@@ -30,7 +30,8 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v4
       - name: 'Dependency Review'
-        uses: actions/dependency-review-action@v4
+        #uses: actions/dependency-review-action@v4
+        uses: actions/dependency-review-action@e4047984002250b82268ac37f613ab74366e1d85 #aka forks-felickz:main
         # Commonly enabled options, see https://github.com/actions/dependency-review-action#configuration-options for all available options.
         with:
           comment-summary-in-pr: always          
